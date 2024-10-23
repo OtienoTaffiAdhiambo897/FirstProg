@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<style>
+    body{
+        background: url(image/pexels-kratz-1363876.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .login{
+        border: 3px solid yellow;
+        max-width: max-content;
+        padding: 20px 30px;
+        margin: 10px auto;
+    }
+    label{
+        color: #fff;
+    }
+    input[type=button]{
+        display: block;
+        background-color: blanchedalmond;
+        margin: 0 auto;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .box{
+       
+        max-width: 400px;
+        width: 100%;
+        
+    }
+    .box .search-bar {
+        position: relative;
+        height: 50px;
+        max-width: 50px;
+        background: #99e1ee;
+        margin: auto;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        color: #fff;
+    }       
+    .search-bar input{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        background: #fff;
+        outline: none;
+        border: none;
+        padding: 0;
+        font-size: 18px;
+    }
+    .search-bar .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 100%;
+        text-align: center;
+        line-height: 52px;
+        color: #fff;
+        background: #99e1ee;
+        font-size: 20px;
+        border-radius: 25px;
+       
+
+    }
+    #check:checked ~ .search-bar{
+        max-width: 380px;
+    }
+    #check:checked ~ .search-bar .icon{
+       background: #99e1ee;
+       color: #fff;
+       border-radius: 25px;
+       width: 50px;
+    }
+    #check{
+        display: none;
+    }
+</style>
+<body>
+   
+ 
+    <div class="login">  
+        <div class="box">
+            <input type="checkbox" id="check">
+        <div class="search-bar">
+            <input type="text" placeholder="Type here...">
+            <label for="check"class="icon">
+                <i class="fas fa-search"></i>
+
+            </label>
+        </div> 
+    </div>
+        <br>
+    <form>
+        <label for="email" >Enter your email:</label>
+        <input type="text" name="email" id="email"/>
+    <br>
+    <br>
+        <label for="password">Enter your password:</label>
+        <input type="Password" email="password" id="password"/>
+    <br>
+    <br>
+    <fieldset>
+        <ul>
+        <li><label><input type="radio" name="hobbies" value="read">Reading</label></li>
+        <li><label><input type="radio" name="hobbies" value="art">Drawing</label></li>
+        <li><label><input type="radio" name="hobbies" value="sing">Singing</label></li>
+        <li><label><input type="radio" name="hobbies" value="dance">Dancing</label></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <ul>
+            <li><label><input type="checkbox" name="fruits" value="grapes">Grapes</label></li>
+            <li><label><input type="checkbox" name="fruits" value="oranges">Oranges</label></li>
+            <li><label><input type="checkbox" name="fruits" value="bananas">Bananas</label></li>
+            <li><label><input type="checkbox" name="fruits" value="mangoes">Mangoes</label></li>
+            </ul>
+    </fieldset>
+    
+</select>
+<label for="studies">Level of studies</label>
+<select id="level">
+
+<option value="primary">Primary</option>
+
+<option value="secondary">Secondary</option>
+
+<option value="university">University</option>
+</select>
+
+<legend>County</legend>
+        <label for="form-county"><p>Which county:</label>
+        <select id="county" name ="county" county ="Taita Taveta" >
+        <option>Nairobi</option>
+        <option>Kisumu</option>
+        <option>Siaya</option>
+        <option>Homabay</option>
+        <option>Kisii/option>
+        <option>Muhironi</option>
+        <option>Kitale</option>
+        <option>Lamu</option>
+        <option>Mombasa</option>
+        <option>Kakamega</option>
+        <option>Garissa</option>
+        <option>Turkana</option>
+        <option>Baringo</option>
+        <br>
+        <br>
+    </p>
+  
+
+    <input type="button" value="LOGIN"/>
+   </form>
+    </div>
+</body>
+</html>
