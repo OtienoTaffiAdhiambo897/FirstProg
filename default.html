@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #343a40;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      color: #007bff;
+    }
+    .container {
+      padding: 20px;
+    }
+    .module {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+    .module button {
+      padding: 10px 20px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .module button:hover {
+      background-color: #009eb3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Employee Management System</h1>
+  </header>
+  <nav>
+    <a href="#registration">Registration</a>
+    <a href="#login">Login</a>
+    <a href="#finance">Finance</a>
+    <a href="#departments">Departments</a>
+    <a href="#procurements">Procurements</a>
+    <a href="#leave">Leave</a>
+  </nav>
+  <div class="container">
+    <div id="registration" class="module">
+      <h2>Registration</h2>
+      <p>Register new employees here.</p>
+      <button>Go to Registration</button>
+    </div>
+    <div id="login" class="module">
+      <h2>Login</h2>
+      <p>Employee login portal.</p>
+      <button>Go to Login</button>
+    </div>
+    <div id="finance" class="module">
+      <h2>Finance</h2>
+      <p>Manage payroll and financial records.</p>
+      <button>Go to Finance</button>
+    </div>
+    <div id="departments" class="module">
+      <h2>Departments</h2>
+      <p>View and manage department details.</p>
+      <button>Go to Departments</button>
+    </div>
+    <div id="procurements" class="module">
+      <h2>Procurements</h2>
+      <p>Track and manage procurement activities.</p>
+      <button>Go to Procurements</button>
+    </div>
+    <div id="leave" class="module">
+      <h2>Leave</h2>
+      <p>Apply for or approve leave.</p>
+      <button>Go to Leave</button>
+    </div>
+  </div>
+</body>
+</html>
